@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container product-container">
+      <div class="product">
+        <header>
+          <div class="product-nav" id="header" style="padding-top: 30px">
+            <a href="./Favindex.html"><i class="fas fa-arrow-left me-5"></i></a>
+            <span style="margin-left: 80px">Product Details</span>
+            <div class="cart-icon" >
+              <div class="cart-amt">0</div>
+              <a href="./shopping.html" target="_blank"
+              ><i class="fas fa-shopping-cart" ></i
+            ></a>
+            </div>
+          </div>
+        </header>
+        <div class="product-details">
+          <img src="./pomegranate.png" class="card-img-top" alt="..." />
+          <p class="price">$9</p>
+          <h5 class="product-name">pomegranate</h5>
+          <p class="text-muted">1 gk</p>
+          <p style="margin-top: -15px; ">4.1 <span><i class="bi bi-star-fill"></i></span>
+          <span><i class="bi bi-star-fill"></i></span>
+          <span><i class="bi bi-star-fill"></i></span>
+          <span><i class="bi bi-star-fill"></i></span>
+          <span><i class="bi bi-star"></i></span>
+          <span class="text-muted"><small>(24 Reviews)</small></span>
+          </p>
+          <div class="price-quantity">
+            <i onclick="decrement(2)" id="increase" class="bi bi-dash-lg quantity-btn" style="border-right: 1px solid #000 ;  padding-left: 4px; padding-right:10px; cursor: pointer;" ></i>
+            <h4>0</h4>
+            <i onclick="increment(2)" id="decrease" class="bi bi-plus-lg quantity-btn" style="border-left: 1px solid #000 ; padding-left: 10px; padding-right: 0px; width: 40px; cursor: pointer;"></i>
+           </div>
+           <i class="bi bi-heart-fill"></i>
+          <!-- <i class="far fa-heart"></i> -->
+        </div>
+      </div>
+    </div>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+    <script src="./main.js"></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>
