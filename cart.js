@@ -31,28 +31,21 @@ let generateCartItems = () => {
     <p class="price"> ${x.price}*${x.no}</p>
     <p class="product-name"> ${x.name}</p>
     <div class="price-quantity">
+    <button id = "decrement">
     <i
     onclick="decrement(${id})"
-    class="bi bi-dash-lg quantity-btn"
-    style="
-    border-right: 1px solid ;
-    padding-left: 4px;
-    padding-right: 10px;
-    cursor: pointer;
-  "
-  ></i>
+    class="fas fa-minus quantity-btn"
+    ></i>
+    </button>
+    
   <h4 id=${id}>${x.no}</h4>
+  <button id = "increment">
   <i
-    onclick="increment(${id})"
-    class="bi bi-plus-lg quantity-btn"
-    style="
-                      border-left: 1px solid ;
-                      padding-left: 4px;
-                      padding-right: 0px;
-                      width: 40px;
-                      cursor: pointer;
-                    "
-  ></i>
+  onclick="increment(${id})"
+  class="fas fa-plus quantity-btn"
+></i>
+  </button>
+ 
   </div>
     </div>
     <div class="cart-buttons">
