@@ -57,7 +57,7 @@
 
 .cart-amt {
   color: #fff;
-  width: auto;
+  width: 25px;
 
   border-radius: 5px;
   font-size: 16px;
@@ -66,7 +66,7 @@
   background-color: red;
   position: absolute;
   top: 5;
-  right: 15;
+  right: 10;
 }
 
 .carts {
@@ -176,16 +176,16 @@ img {
 }
 .fav-card {
   width: 200px;
-  height: auto;
+  height: 330px;
   border: 1px solid rgb(192, 191, 191);
 
   box-shadow: ;
   margin-bottom: 20px;
   margin-left: px;
-  position: relative;
 }
 
 .card-body {
+  position: relative;
 }
 .card-img-top {
   width: 160px;
@@ -198,7 +198,8 @@ img {
   color: #49b649;
 }
 .card-title {
-  margin-left: 30px;
+  /* justify-content: center; */
+  margin-left: 16px;
   margin-top: -10px;
 }
 .card-text {
@@ -232,8 +233,8 @@ img {
   font-weight: 600;
   text-decoration: solid;
   background-color: #fff;
-  margin-right: ;
-  /* padding: 8px; */
+ margin-left: -17px;
+  
 }
 
 .add-cart:hover {
@@ -302,6 +303,15 @@ img {
   border-radius: 5px;
   height: 110px;
   display: flex;
+}
+.shopCart{
+  margin-top: 15px;
+  margin-right: 0px;
+  font-size: 30px;
+  cursor: pointer !important;
+  position: absolute ;
+  right: 10px;
+  z-index: -1;
 }
 .details {
   display: flex;
